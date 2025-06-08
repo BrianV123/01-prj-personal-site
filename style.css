@@ -6,10 +6,15 @@
 /* Set a tan background for the whole page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5deb3; /* Tan background */
+  background-color: #f5deb3; /* Tan background for fallback */
   color: #4b2e05; /* Dark brown text */
   margin: 0;
   padding: 0;
+  /* Use your Wild West town image as the background */
+  background-image: url('https://wallpaperdelight.com/wp-content/uploads/2024/05/A-cowboy-silhouette-on-a-classic-ride-at-dusk-with-rugged-mountains-and-cacti-lining-the-horizon-dotting-the-landscape-in-.jpg.jpg');
+  background-size: cover;        /* Make the image cover the whole page */
+  background-repeat: no-repeat;  /* Do not repeat the image */
+  background-position: center;   /* Center the image */
 }
 
 /* Style for each section */
@@ -26,8 +31,12 @@ section {
 /* Hero section styles */
 .hero {
   text-align: center;
-  background-color: #deb887; /* Burlywood background */
+  background-color: rgba(222, 184, 135, 0.7); /* Burlywood with 70% opacity */
   border-bottom: 4px double #8b4513; /* Double border for western feel */
+  width: 100%;        /* Make it as wide as the page */
+  max-width: none;    /* Remove the maximum width */
+  margin-left: 0;     /* Remove left margin */
+  margin-right: 0;    /* Remove right margin */
 }
 
 /* Western-style font for main headings */
@@ -46,6 +55,11 @@ p {
 /* Center text in the bio and skills sections */
 .bio, .skills {
   text-align: center; /* This centers all text inside these sections */
+  width: 100%;        /* Make it as wide as the page */
+  max-width: none;    /* Remove the maximum width */
+  margin-left: 0;     /* Remove left margin */
+  margin-right: 0;    /* Remove right margin */
+  background-color: rgba(255, 248, 225, 0.7); /* Light parchment with 70% opacity */
 }
 
 /* Skills section styles */
@@ -87,4 +101,14 @@ p {
   font-size: 1em;
   color: #4b2e05;
   font-family: 'Special Elite', sans-serif;
+}
+
+/* Outline style for the top icon */
+/* This makes a circle outline around the icon */
+.icon-outline {
+  border: 0px solid #a0522d;    /* Brown outline */
+  border-radius: 50%;           /* Makes the outline round */
+  padding: 10px;                /* Space between icon and border */
+  background: #fff8e1;          /* Light background inside the circle */
+  display: inline-block;        /* Needed for border and padding to work */
 }
