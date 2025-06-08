@@ -43,6 +43,11 @@ p {
   line-height: 1.6;
 }
 
+/* Center text in the bio and skills sections */
+.bio, .skills {
+  text-align: center; /* This centers all text inside these sections */
+}
+
 /* Skills section styles */
 .skills ul {
   display: none;
@@ -69,6 +74,12 @@ p {
   margin-bottom: 5px;
   /* Make images light brown using a filter */
   filter: sepia(1) hue-rotate(-20deg) brightness(1.2) saturate(2);
+}
+
+/* Make the JavaScript icon darker */
+.skill-icon[alt="JavaScript Logo"] {
+  /* Reduce brightness and remove some sepia to make it darker */
+  filter: sepia(1) hue-rotate(-20deg) brightness(0.9) saturate(2.2);
 }
 
 /* Skill label style */
