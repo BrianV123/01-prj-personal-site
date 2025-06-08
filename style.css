@@ -1,1 +1,79 @@
 /* Add you CSS here */
+
+/* Use a western-style font for headings from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* Set a tan background for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5deb3; /* Tan background */
+  color: #4b2e05; /* Dark brown text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for each section */
+section {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff8e1; /* Light parchment color */
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid #a0522d; /* Saddle brown border */
+  box-shadow: 0 2px 8px rgba(139,69,19,0.08); /* Soft brown shadow */
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  background-color: #deb887; /* Burlywood background */
+  border-bottom: 4px double #8b4513; /* Double border for western feel */
+}
+
+/* Western-style font for main headings */
+h1, h2 {
+  font-family: 'Special Elite', Arial, sans-serif; /* Western font */
+  margin-top: 0;
+  color: #6b3e26; /* Darker brown for headings */
+  letter-spacing: 2px; /* Spaced out letters */
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+}
+
+/* Skills section styles */
+.skills ul {
+  display: none;
+}
+
+/* Skills row styles */
+.skills-row {
+  display: flex;                /* Show items in a row */
+  justify-content: center;      /* Center the row */
+  gap: 30px;                    /* Space between skills */
+  margin-top: 15px;
+}
+
+/* Each skill item */
+.skill-item {
+  display: flex;                /* Icon and label side by side */
+  flex-direction: column;       /* Stack icon above label */
+  align-items: center;          /* Center items */
+}
+
+/* Skill icon style */
+.skill-icon {
+  font-size: 2em;               /* Make icon bigger */
+  margin-bottom: 5px;
+  /* Make images light brown using a filter */
+  filter: sepia(1) hue-rotate(-20deg) brightness(1.2) saturate(2);
+}
+
+/* Skill label style */
+.skill-label {
+  font-size: 1em;
+  color: #4b2e05;
+  font-family: 'Special Elite', sans-serif;
+}
