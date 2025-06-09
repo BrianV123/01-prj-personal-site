@@ -112,3 +112,33 @@ p {
   background: #fff8e1;          /* Light background inside the circle */
   display: inline-block;        /* Needed for border and padding to work */
 }
+
+/* Simple navigation bar styles */
+.navbar {
+  background-color: #deb887; /* Burlywood color for Wild West feel */
+  border-bottom: 2px solid #a0522d; /* Brown border */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline; /* Show links in a row */
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6b3e26; /* Dark brown */
+  font-family: 'Special Elite', Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.navbar a:hover {
+  color: #a0522d; /* Saddle brown on hover */
+}
